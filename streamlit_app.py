@@ -54,11 +54,11 @@ if ingredient_list:
         session.sql(my_insert_stmt).collect()
         st.success(f'Your Smoothie is ordered for {name_on_order}!', icon="✅")
 
-  #new section to display smoothies nutrition information
-  import requests  
-  smoothiefroot_response = requests.get("[https://my.smoothiefroot.com/api/fruit/watermelon](https://my.smoothiefroot.com/api/fruit/watermelon)")  
-  #st.text(smoothiefroot_response)
-  sf_df=st.dataframe(data=smoothiefroot_response.jason(),use_container_width = True)
+    #new section to display smoothies nutrition information
+    import requests  
+    smoothiefroot_response = requests.get("[https://my.smoothiefroot.com/api/fruit/watermelon](https://my.smoothiefroot.com/api/fruit/watermelon)")  
+    #st.text(smoothiefroot_response)
+    sf_df=st.dataframe(data=smoothiefroot_response.jason(),use_container_width = True)
       
 
 
